@@ -9,13 +9,12 @@ mioArray.push(cognomeUtente);
 console.log(mioArray);
 
 mioArray.sort();
-console.log(mioArray);
-alert(mioArray) ;
+alert(mioArray);
  
 for ( i = 1 ; i <= mioArray.length ; i++ ) {
     mioArray++;
 
-    console.log(mioArray);
+    alert(cognomeUtente);
 }
 
 //while ( i = 1 ; i < mioArray.length ; i++ ) {
