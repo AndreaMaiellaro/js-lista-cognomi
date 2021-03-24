@@ -10,4 +10,15 @@ console.log(mioArray);
 
 mioArray.sort();
 console.log(mioArray);
-document.getElementById('lista cognomi').innerHTML = mioArray ;
+alert(mioArray) ;
+ 
+for ( i = 1 ; i <= mioArray.length ; i++ ) {
+    mioArray++;
+
+    console.log(mioArray);
+}
+
+//while ( i = 1 ; i < mioArray.length ; i++ ) {
+    //mioArray++;
+    //console.log(mioArray);
+//}
