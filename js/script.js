@@ -9,20 +9,14 @@ console.log(mioArray);
 
 mioArray.sort();
 console.log(mioArray);
-document.getElementById("lista").innerHTML = mioArray;
 
-
-// var indiceCognome = mioArray.indexOf(cognomeUtente) + 1 ;
-// console.log('la tua posizione è:', indiceCognome );
-// alert('la tua posizione è:', indiceCognome );
- 
-for ( i = 0 ; i < mioArray.length ; i++ ) {
-    var indiceCognome = mioArray.indexOf(cognomeUtente) + 1 ;
-    console.log('la tua posizione è:', indiceCognome );
-    document.getElementById("demo").innerHTML = indiceCognome;
+for (var i = 0; i < mioArray.length; i++ ) {
+    var cognomeAttuale = mioArray[i];
+    var contentUl = document.getElementById('lista').innerHTML;
+    document.getElementById('lista').innerHTML = contentUl + '<li>' + cognomeAttuale + '</li>';
 }
 
-//while ( i = 1 ; i < mioArray.length ; i++ ) {
-    //mioArray++;
-    //console.log(mioArray);
-//}
+var indiceCognome = mioArray.indexOf(cognomeUtente) + 1 ;
+console.log('la tua posizione è:', indiceCognome );
+document.getElementById("demo").innerHTML = indiceCognome;
+
